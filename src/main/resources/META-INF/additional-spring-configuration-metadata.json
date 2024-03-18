@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "application.source.url",
+    "type": "java.lang.String",
+    "description": "A description for 'application.source.url'"
+  },
+  {
+    "name": "spring.source.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.source.url'"
+  }
+]}

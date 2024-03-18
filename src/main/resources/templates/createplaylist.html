@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Play List</title>
+</head>
+<body style="background-image:url('https://media.istockphoto.com/id/1191960287/photo/abstract-white-music-background-musical-notes-and-symbols-for-christmas-carol.jpg?s=2048x2048&w=is&k=20&c=iMIwdzJgoT1blV96MmNoq0qfjf9dCJofPJVqc4iyIY4=')">
+  <form action="/addplaylist" method="post">
+  <label>PlayList Name</label>
+  <input type="text" name="name" required>
+  <br/>
+  <div th:each="song : ${songslist}" >
+  <input type="checkbox" th:name= "songs" th:value="${song.id}">
+  <label th:text="${song.name}"></label>
+    
+  </div>
+  
+  <input type="submit" value="ADD PLAYLIST">
+  
+  </form>
+</body>
+</html>
